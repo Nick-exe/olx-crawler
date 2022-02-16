@@ -47,7 +47,7 @@ def extractListData(listItem: PageElement):
   
     descriptionUrl = descAndTitleElement.get('href')
     description = scrape_description(descriptionUrl)
-    return formatData(title, price, description, imageUrl)
+    return formatData(title, description, price, imageUrl)
 
 def extractPrice(text):
     val = re.sub("[^0-9]", "", text)
